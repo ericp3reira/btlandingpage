@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>Awesome App</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+  </head>
+  
+  <body data-spy="scroll" data-target="#navbar" data-offset="250">
+    
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-light navbar-fixed-top bg-faded" id="navbar">
+      <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
+        <a class="navbar-brand" href="#">AwesomeApp</a>
+        <ul class="nav navbar-nav" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Download</a>
+          </li>
+        </ul>
+        <form class="form-inline pull-xs-right">
+          <input class="form-control" type="email" placeholder="E-mail">
+          <input class="form-control" type="password" placeholder="Password">
+          <button class="btn btn-success" type="submit">Login</button>
+        </form>
+      </div>
+    </nav>
+   
+    <!-- 1st Section -->
+    <div class="jumbotron" id="section1">
+      <div class="container gray-bg">
+        <h1 class="display-4">My Awesome App</h1>
+        <p class="lead">This is why YOU should download this awesome app!</p>
+        <hr>
+        <p>Wanna know more? Join our mailing list!</p>
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="section1-email">E-mail address</label>
+            <div class="input-group">
+              <div class="input-group-addon">@</div>
+              <input type="email" class="form-control" id="section1-email" placeholder="E-mail">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- 2nd Section -->
+    <div class="container" id="section2">
+      <h1 class="display-6">Talk about your awesome app</h1>
+      <p class="lead">Why you should download our app</p>
+      <div class="card-deck-wrapper">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="images/card01.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Image 01</h4>
+              <p class="card-text">Original image reduced (not cutted).</p>
+              <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Lemons on the right" data-placement="right">Mouse Over</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Image 02</h4>
+              <p class="card-text">Original image reduced (not cutted).</p>
+             <button type="button" class="btn btn-danger" data-toggle="popover" title="Sky on the left" data-content="A popover shows at the position selected." data-placement="left">Click me</button>
+            </div>
+            <img class="card-img-bottom img-fluid" src="images/card02.jpg" alt="Card image cap">
+          </div>        
+          <div class="card">
+            <img class="card-img img-fluid" src="images/card03.jpg" alt="Card image cap">
+            <div class="card-img-overlay card-inverse">
+              <h4 class="card-title" id="image03Title">Image 03</h4>
+              <p class="card-text">Text on the image.</p>
+              <button type="button" class="btn btn-danger" title="Map" data-toggle="modal" data-target="#myModal">Open Image</button>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="image">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="images/card03.jpg" alt="Card image">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 3rd Section -->
+    <div class="jumbotron" id="section3">
+      <h2 class="display-6">Download the app here:</h2>
+      <p class="lead">Ok! I will!</p>
+      <p><img src="images/appstore.png" class="dl-stores"></p>
+      <p><img src="images/google_play.png" class="dl-stores"></p>
+      
+    </div>
+        
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">      
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus();
+        $('#myModalLabel').html($('#image03Title').html());
+      });
+      
+    </script>
+  
+  </body>
+
+</html>
